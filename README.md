@@ -28,7 +28,7 @@ Until this, you can use this library.
 fun App() {
     val containerSize = currentWindowContainerSize()
 
-    if (containerSize.width >= 480.dp) {
+    if (containerSize.width >= 600.dp) {
         TabletLayout()
     } else {
         PhoneLayout()
