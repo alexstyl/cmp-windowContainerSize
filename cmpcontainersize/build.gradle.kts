@@ -68,6 +68,21 @@ kotlin {
         androidMain.dependencies {
             implementation(libs.window)
         }
+        val nonAndroidMain by creating {
+            dependsOn(commonMain)
+        }
+        iosMain {
+            dependsOn(nonAndroidMain)
+        }
+        jvmMain {
+            dependsOn(nonAndroidMain)
+        }
+        jsMain {
+            dependsOn(nonAndroidMain)
+        }
+        wasmJsMain {
+            dependsOn(nonAndroidMain)
+        }
     }
 }
 
