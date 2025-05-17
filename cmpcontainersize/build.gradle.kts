@@ -68,6 +68,12 @@ kotlin {
         androidMain.dependencies {
             implementation(libs.window)
         }
+        val nonAndroidMain by creating {
+            dependsOn(commonMain)
+        }
+        listOf(iosMain, jvmMain, jsMain, wasmJsMain).forEach {
+            it.dependsOn(nonAndroidMain)
+        }
     }
 }
 
