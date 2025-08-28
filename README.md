@@ -1,3 +1,7 @@
+# This is archived and moved to [Compose Unstyled](https://github.com/composablehorizons/compose-unstyled).
+
+---
+
 # CMP Container Size
 
 A Compose Multiplatform utility that provides an observable way of knowing the size of the window you are in.
